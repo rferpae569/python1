@@ -2,7 +2,7 @@ import datetime
 try:
     num=int(input("Escribe un numero: "))
     if num<0:
-        raise "Error numero negativo"
+        raise Exception("Error numero negativo")
     for i in range(0,num,2):
         print(i,end=" ")
 except ValueError as e:
